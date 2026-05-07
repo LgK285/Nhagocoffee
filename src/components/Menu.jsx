@@ -182,11 +182,11 @@ export default function Menu({ onImageClick }) {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl group cursor-zoom-in"
-            onClick={() => onImageClick("https://lh3.googleusercontent.com/grass-cs/ANxoTn3wos6V6bgHiEvEhQ3cKfz1hOXzO5Sf3QPLVnhUdqmgW9yeyipxU1ybKi5YYUKO3alsTjdQMeclrglcYCamO07B0tx7wR8qMFoJn7PkkdnQnYPt_ub7NyaB5snpw9p1QSQdG3otGZ_QRwAc=k-no", "Cà phê Muối - Best Seller của quán")}
+            onClick={() => onImageClick("https://lh3.googleusercontent.com/grass-cs/ANxoTn3wos6V6bgHiEvEhQ3cKfz1hOXzO5Sf3QPLVnhUdqmgW9yeyipxU1ybKi5YYUKO3alsTjdQMeclrglcYCamO07B0tx7wR8qMFoJn7PkkdnQnYPt_ub7NyaB5snpw9p1QSQdG3otGZ_QRwAc=k-no", "Cà Phê Muối - Best Seller của quán")}
           >
             <img
               src="https://lh3.googleusercontent.com/grass-cs/ANxoTn3wos6V6bgHiEvEhQ3cKfz1hOXzO5Sf3QPLVnhUdqmgW9yeyipxU1ybKi5YYUKO3alsTjdQMeclrglcYCamO07B0tx7wR8qMFoJn7PkkdnQnYPt_ub7NyaB5snpw9p1QSQdG3otGZ_QRwAc=k-no"
-              alt="Cà phê muối"
+              alt="Cà Phê Muối"
               className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
@@ -198,11 +198,11 @@ export default function Menu({ onImageClick }) {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl group cursor-zoom-in"
-            onClick={() => onImageClick("https://lh3.googleusercontent.com/gps-cs-s/APNQkAElrC0xw697Y8oW29TUL7gf5RaqCN0W369Goe7WETl7cD0OYkmkRJtDVtVk4xluSVehM7Gq5bd5aOqNF-l98gXC3lLU01PLEUOfR-jZulkXnQY7Ke1N1E5sjoGIy9SBodA8qLdkiihWrscN=s2048", "Thanh mát cùng Nước ép trái cây tươi")}
+            onClick={() => onImageClick("https://lh3.googleusercontent.com/gps-cs-s/APNQkAElrC0xw697Y8oW29TUL7gf5RaqCN0W369Goe7WETl7cD0OYkmkRJtDVtVk4xluSVehM7Gq5bd5aOqNF-l98gXC3lLU01PLEUOfR-jZulkXnQY7Ke1N1E5sjoGIy9SBodA8qLdkiihWrscN=s2048", "Thanh mát cùng Sữa Chua Trái Cây Tươi")}
           >
             <img
               src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAElrC0xw697Y8oW29TUL7gf5RaqCN0W369Goe7WETl7cD0OYkmkRJtDVtVk4xluSVehM7Gq5bd5aOqNF-l98gXC3lLU01PLEUOfR-jZulkXnQY7Ke1N1E5sjoGIy9SBodA8qLdkiihWrscN=s2048"
-              alt="Nước ép trái cây"
+              alt="Sữa Chua Trái Cây Tươi"
               className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
