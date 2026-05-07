@@ -11,7 +11,7 @@ const menuData = [
       { name: "Bạc xỉu", price: "30k" },
       { name: "Cà phê muối", price: "35k", featured: true },
       { name: "Cà phê cốm", price: "39k" },
-      { name: "Findi hạnh nhân", price: "42k" },
+      { name: "Findi hạnh nhân", price: "42k", featured: true },
       { name: "Cà phê dừa", price: "39k" },
     ]
   },
@@ -21,8 +21,8 @@ const menuData = [
     items: [
       { name: "Espresso đen", price: "26k" },
       { name: "Espresso sữa", price: "30k" },
-      { name: "Bạc xỉu pha máy", price: "32k" },
-      { name: "Cà phê muối", price: "37k", featured: true },
+      { name: "Bạc xỉu pha máy", price: "32k", featured: true },
+      { name: "Cà phê muối", price: "37k" },
       { name: "Cappuccino", price: "42k" },
       { name: "Latte", price: "45k" },
       { name: "Cà phê kem Ý", price: "50k" },
@@ -33,29 +33,35 @@ const menuData = [
     sub: "JUICE",
     items: [
       { name: "Cam hạt chia", price: "35k" },
-      { name: "Thơm / Dưa hấu / Cà rốt", price: "35k-37k" },
-      { name: "Dừa đặc thơm", price: "39k" },
-      { name: "Chanh / Chanh dây", price: "25k-35k" },
+      { name: "Thơm", price: "37k" },
+      { name: "Dưa hấu", price: "35k" },
+      { name: "Cà rốt", price: "35k" },
+      { name: "Dừa Trái", price: "37k" },
+      { name: "Dừa đác thơm", price: "39k" },
+      { name: "Chanh / Chanh dây", price: "35k" },
       { name: "Mix 2 loại", price: "39k" },
+      { name: "Nguyên chất", price: "+5k" },
     ]
   },
   {
     category: "Trà",
     sub: "TEA",
     items: [
-      { name: "Trà Lipton", price: "35k" },
+      { name: "Trà Lipton", price: "35k", featured: true },
       { name: "Trà gừng / Hoa cúc nóng", price: "32k" },
-      { name: "Trà cam đào", price: "39k", featured: true },
-      { name: "Trà mãng cầu / Dưa hấu", price: "39k" },
-      { name: "Trà lài đặc thơm", price: "35k" },
+      { name: "Trà cam đào", price: "39k" },
+      { name: "Trà mãng cầu", price: "39k" },
+      { name: "Trà dưa hấu", price: "39k", featured: true },
+      { name: "Trà lài đác thơm", price: "35k" },
     ]
   },
   {
     category: "Sữa Chua",
     sub: "YOGURT",
     items: [
+      { name: "Sữa chua đá", price: "30k" },
       { name: "Sữa chua trái cây tươi", price: "42k", featured: true },
-      { name: "Sữa chua xoài / Việt quất", price: "37k" },
+      { name: "Sữa chua xoài / Việt quất / Đác Thơm", price: "37k", featured: true },
       { name: "Sữa chua cốm mít", price: "39k" },
       { name: "Sữa chua cà phê", price: "35k" },
       { name: "Sữa chua hũ", price: "25k" },
@@ -66,8 +72,8 @@ const menuData = [
     sub: "SMOOTHIE",
     items: [
       { name: "Oreo đá xay", price: "49k" },
-      { name: "Matcha đá xay", price: "49k", featured: true },
-      { name: "Sinh tố xoài / Việt quất", price: "47k" },
+      { name: "Matcha đá xay", price: "49k" },
+      { name: "Sinh tố xoài / Việt quất", price: "47k", featured: true },
       { name: "Sinh tố dừa", price: "42k" },
     ]
   },
@@ -87,7 +93,8 @@ const menuData = [
     items: [
       { name: "Hạt dưa / Hướng dương", price: "18k" },
       { name: "Kem vani", price: "37k" },
-      { name: "Cocacola / Bò húc", price: "25k-30k" },
+      { name: "Cocacola", price: "25k" },
+      { name: "Bò húc", price: "30k" },
       { name: "Nước suối", price: "20k" },
     ]
   }
@@ -183,7 +190,7 @@ export default function Menu({ onImageClick }) {
               className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
-              <p className="text-white text-xl font-display italic">Cà phê Muối - Best Seller của quán</p>
+              <p className="text-white text-xl font-display italic">Cà Phê Muối - Best Seller của quán</p>
             </div>
           </motion.div>
           <motion.div
@@ -199,7 +206,7 @@ export default function Menu({ onImageClick }) {
               className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
-              <p className="text-white text-xl font-display italic">Thanh mát cùng Nước ép trái cây tươi</p>
+              <p className="text-white text-xl font-display italic">Thanh mát cùng Sữa Chua Trái Cây Tươi</p>
             </div>
           </motion.div>
         </div>
