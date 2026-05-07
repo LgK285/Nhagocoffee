@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Clock, Coffee, ShieldCheck } from "lucide-react";
 
-export default function About() {
+export default function About({ onImageClick }) {
   return (
     <section id="about" className="section-padding bg-cream relative overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -14,7 +14,8 @@ export default function About() {
         >
           <div className="absolute -top-4 -left-4 w-24 h-24 bg-brick/10 rounded-full blur-2xl"></div>
           <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-wood-primary/10 rounded-full blur-2xl"></div>
-          <div className="rounded-3xl overflow-hidden shadow-2xl relative z-10 aspect-[4/5] lg:aspect-auto lg:h-[600px]">
+          <div className="rounded-3xl overflow-hidden shadow-2xl relative z-10 aspect-[4/5] lg:aspect-auto lg:h-[600px] cursor-zoom-in"
+               onClick={() => onImageClick("https://lh3.googleusercontent.com/gps-cs-s/APNQkAHge5CFjw87ymBFe5F7SZWcVKkg5NcxZDYHY9ZRWN0OtFkGhfRE2-2QUrpI5z5x7YluBITc_M-8pWVR18vEkwZrPN_ScPROtMyadMjSXpawekeIha_pCe5to3DRE7K1taHExkgY9nuAJ3M=s2048", "Không gian Nhà Gỗ")}>
             <img
               src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHge5CFjw87ymBFe5F7SZWcVKkg5NcxZDYHY9ZRWN0OtFkGhfRE2-2QUrpI5z5x7YluBITc_M-8pWVR18vEkwZrPN_ScPROtMyadMjSXpawekeIha_pCe5to3DRE7K1taHExkgY9nuAJ3M=s2048"
               alt="Nhà Gỗ Interior"
@@ -44,7 +45,7 @@ export default function About() {
             Về chúng tôi
           </span>
           <h2 className="text-4xl md:text-5xl text-wood-dark mb-8 leading-tight">
-            Nơi thời gian <br /> <span className="italic">ngừng lại</span> bên tách cà phê
+            Nơi thời gian ngừng lại bên tách cà phê
           </h2>
           <p className="text-neutral-600 text-lg mb-8 leading-relaxed">
             Nhà Gỗ Coffee không chỉ là một quán cà phê, mà là một tác phẩm kiến trúc được thổi hồn từ gỗ tự nhiên và gạch nung mộc mạc. Chúng tôi mang đến một không gian tĩnh lặng, tách biệt với sự ồn ào của phố thị, nơi bạn có thể làm việc, thư giãn hay hàn huyên cùng bạn bè vào bất cứ lúc nào trong ngày.
@@ -71,9 +72,9 @@ export default function About() {
             </div>
           </div>
 
-          <button className="mt-10 btn-primary">
+          <a href="#contact" className="mt-10 btn-primary inline-block">
             Tìm hiểu thêm
-          </button>
+          </a>
         </motion.div>
       </div>
     </section>

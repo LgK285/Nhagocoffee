@@ -51,7 +51,7 @@ export default function Footer() {
                 <span className="text-brick font-bold">6:00-21:00</span>
               </div>
               <p className="text-xs text-cream/40 leading-relaxed">
-                Chúng tôi luôn sẵn sàng phục vụ bạn vào bất cứ thời điểm nào trong ngày.
+                Chúng tôi luôn sẵn sàng phục vụ bạn trong ngày.
               </p>
             </div>
           </div>

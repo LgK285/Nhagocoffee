@@ -93,7 +93,7 @@ const menuData = [
   }
 ];
 
-export default function Menu() {
+export default function Menu({ onImageClick }) {
   return (
     <section id="menu" className="section-padding bg-[#F9F6F0] relative overflow-hidden">
       {/* Decorative background elements */}
@@ -174,7 +174,8 @@ export default function Menu() {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl group"
+            className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl group cursor-zoom-in"
+            onClick={() => onImageClick("https://lh3.googleusercontent.com/grass-cs/ANxoTn3wos6V6bgHiEvEhQ3cKfz1hOXzO5Sf3QPLVnhUdqmgW9yeyipxU1ybKi5YYUKO3alsTjdQMeclrglcYCamO07B0tx7wR8qMFoJn7PkkdnQnYPt_ub7NyaB5snpw9p1QSQdG3otGZ_QRwAc=k-no", "Cà phê Muối - Best Seller của quán")}
           >
             <img
               src="https://lh3.googleusercontent.com/grass-cs/ANxoTn3wos6V6bgHiEvEhQ3cKfz1hOXzO5Sf3QPLVnhUdqmgW9yeyipxU1ybKi5YYUKO3alsTjdQMeclrglcYCamO07B0tx7wR8qMFoJn7PkkdnQnYPt_ub7NyaB5snpw9p1QSQdG3otGZ_QRwAc=k-no"
@@ -189,7 +190,8 @@ export default function Menu() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl group"
+            className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl group cursor-zoom-in"
+            onClick={() => onImageClick("https://lh3.googleusercontent.com/gps-cs-s/APNQkAElrC0xw697Y8oW29TUL7gf5RaqCN0W369Goe7WETl7cD0OYkmkRJtDVtVk4xluSVehM7Gq5bd5aOqNF-l98gXC3lLU01PLEUOfR-jZulkXnQY7Ke1N1E5sjoGIy9SBodA8qLdkiihWrscN=s2048", "Thanh mát cùng Nước ép trái cây tươi")}
           >
             <img
               src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAElrC0xw697Y8oW29TUL7gf5RaqCN0W369Goe7WETl7cD0OYkmkRJtDVtVk4xluSVehM7Gq5bd5aOqNF-l98gXC3lLU01PLEUOfR-jZulkXnQY7Ke1N1E5sjoGIy9SBodA8qLdkiihWrscN=s2048"

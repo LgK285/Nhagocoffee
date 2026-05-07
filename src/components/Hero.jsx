@@ -30,11 +30,11 @@ export default function Hero() {
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl text-white mb-8 leading-[1.1]">
             Nhà Gỗ <br />
-            <span className="text-brick">Coffee</span>
+            <span className="text-brick font-bold">Coffee</span>
           </h1>
 
           <p className="text-cream/80 text-lg md:text-xl mb-10 max-w-lg leading-relaxed">
-            Không gian kiến trúc gỗ độc đáo, mộc mạc và ấm cúng. Nơi bạn tìm thấy sự bình yên giữa lòng Quy Nhơn.
+            Không gian kiến trúc gỗ độc đáo, mộc mạc và ấm cúng. Nơi bạn tìm thấy sự bình yên giữa lòng thành phố Quy Nhơn.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

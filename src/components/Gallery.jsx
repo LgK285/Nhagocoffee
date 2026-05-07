@@ -13,7 +13,7 @@ const images = [
   },
   {
     url: "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHQhdbDjHHb8k90pXsCZ7HHK3cTCk3REgbTyJjUcUrcWpC5URZjNWGnXJ-C8yNYbAz2r3Qh2L_eUcByy9Wi1PtBR5uaSpI5Bo9kdQB9ysPKCpI1Y7xZ-ebHt63WCCSpD_FQnqDWRmU1CO8=s2048",
-    title: "Không gian ngoài trời",
+    title: "Không gian xung quanh",
     size: ""
   },
   {
@@ -23,7 +23,7 @@ const images = [
   }
 ];
 
-export default function Gallery() {
+export default function Gallery({ onImageClick }) {
   return (
     <section id="gallery" className="section-padding bg-cream">
       <div className="max-w-7xl mx-auto">
@@ -49,7 +49,8 @@ export default function Gallery() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className={`relative overflow-hidden rounded-3xl group ${img.size}`}
+              className={`relative overflow-hidden rounded-3xl group cursor-zoom-in ${img.size}`}
+              onClick={() => onImageClick(img.url, img.title)}
             >
               <img
                 src={img.url}
